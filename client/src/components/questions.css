@@ -1,0 +1,86 @@
+input {
+  position: relative !important;
+  outline: 0 !important;
+}
+label {
+  position: relative !important;
+}
+.table-striped {
+  font-size: 12px;
+}
+.sv_q tr th {
+  min-width: 20px;
+  width: 8%;
+}
+span::after {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  border: none !important;
+}
+.checkbox-material::before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: solid 2px rgba(0, 0, 0, 0.7) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7) !important;
+}
+.sv_progress {
+  color: transparent;
+  height: 10px !important;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+.sv_progress_bar {
+  height: 10px !important;
+  border-radius: 10px;
+}
+.surveycontainer {
+  padding-top: 40px;
+}
+.sv-question__title--answer {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.sv-table {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-spacing: 0px;
+}
+
+.sv-root-modern .sv-description {
+  color: black !important;
+  font-weight: bold;
+}
+
+.sv-body {
+  background-color: white;
+}
+
+#table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  width: 50%;
+}
+
+tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.sv-table {
+  padding: 0;
+  table-layout: fixed;
+}
+
+.sv-matrix__cell {
+  min-width: 1em;
+  max-width: 1em;
+  width: 1em;
+  border-right: none;
+  border-left: none;
+}
+.sv-table__cell {
+  padding: 1em;
+}
+.sv-page {
+  padding-top: 50px;
+}

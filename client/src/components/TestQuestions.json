@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "text",
+          "name": "String",
+          "title": "String"
+        },
+        {
+          "type": "boolean",
+          "name": "Boolean",
+          "title": "Boolean"
+        },
+        {
+          "type": "radiogroup",
+          "name": "RadioGroup",
+          "title": "Radio Group",
+          "choices": [
+            {
+              "value": "1",
+              "text": "Option 1 "
+            },
+            {
+              "value": "2",
+              "text": "Option 2 "
+            },
+            {
+              "value": "3",
+              "text": "Option 3 "
+            }
+          ]
+        },
+        {
+          "type": "matrix",
+          "name": "Matrix",
+          "title": "Matrix",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": ["Row 1"]
+        }
+      ]
+    }
+  ]
+}
