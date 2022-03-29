@@ -7,6 +7,9 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
+import linkedin_icon from "../resources/linkedin.svg";
+import twitter_icon from "../resources/twitter.svg";
+import facebook_icon from "../resources/facebook.svg";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -47,7 +50,18 @@ export default function NavBar() {
                 </Grid>
                 <Grid item xs={6}>
                   <Typography variant="body1" align="right">
-                    Contact: entremapco@gmail.com{" "}
+                    Contact: entremapco@gmail.com
+                  </Typography>
+                  <Typography variant="body1" align="right">
+                    <a href="https://www.linkedin.com/company/entremap/">
+                      <img src={linkedin_icon} alt="linkedin" />
+                    </a>{" "}
+                    <a href="https://twitter.com/entremap1">
+                      <img src={twitter_icon} alt="twitter" />
+                    </a>{" "}
+                    <a href="https://twitter.com/entremap1">
+                      <img src={facebook_icon} alt="facebook" />
+                    </a>
                   </Typography>
                 </Grid>
               </Grid>
