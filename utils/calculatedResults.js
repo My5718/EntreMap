@@ -1,4 +1,5 @@
 function calculateResults(SurveyResults) {
+  console.log(SurveyResults);
   let resultSet = {
     MotivationAtWork: {
       Intrinsic: 0,

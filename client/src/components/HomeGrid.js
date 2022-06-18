@@ -76,9 +76,49 @@ export default function HomeGrid(props) {
         <Grid container spacing={0}>
           <Grid item xs={12} sm={12} md={6}>
             <Box className={classes.landingText}>
-              <Grid
+
+              <Grid item xs={12} sm={12}>
+                <Grid container spacing={2} justify="center" direction="column">
+                  <Grid item xs={10}>
+                    <Typography variant="h3" style={{ position: "relative", left: "120px", width: "700px" }}>About</Typography>
+                  </Grid>
+
+                  <Grid item xs={12}>
+                    <Grid container spacing={8}>
+                      <Grid item xs="12" lg="6">
+                        <Typography variant="h6" style={{ position: "relative", top: "20px", left: "120px", width: "750px" }}>
+                          If you are running your own business (venture creation),
+                          thinking of getting into business, or working to be a
+                          changemaker within a business (value creation) and want to
+                          know how you can develop yourself or your team in being
+                          more entrepreneurial, measuring your entrepreneurial
+                          mindset profile can evaluate where you are and how you can
+                          work on personal and professional development.
+                        </Typography>
+                        <Typography variant="h6" style={{ position: "relative", top: "40px", left: "120px", width: "750px" }}>
+                          Having an entrepreneurial mindset is essential to
+                          innovation, a disciplined approach to entrepreneurship,
+                          successful value creation, and personal and professional
+                          development in a dynamic contemporary workscape.
+                        </Typography>
+
+                        <Typography variant="h6" style={{ position: "relative", top: "60px", left: "120px", width: "750px" }}>
+                          Entremap helps you in industry, university and startup
+                          projects to evaluate the degree to which you are utilizing
+                          an entrepreneurial mindset and provides the context in
+                          which you might develop it further.
+                        </Typography>
+                      </Grid>
+                      <Grid item xs="12" lg="6"></Grid>
+                    </Grid>
+                  </Grid>
+                </Grid>
+              </Grid>
+
+              <Grid style={{ position: "relative", left: "400px", top: "100px", zIndex: 1 }}
                 container
                 spacing={0}
+
                 direction="column"
                 justify="center"
                 alignItems="stretch"
@@ -94,6 +134,7 @@ export default function HomeGrid(props) {
                     Entremap
                   </Typography>
                 </Grid>
+                {/* entremap */}
 
                 <Grid item xs={12}>
                   <Box pt={2}>
@@ -103,6 +144,7 @@ export default function HomeGrid(props) {
                       variant="contained"
                       size="large"
                       color="primary"
+
                       className={classes.margin}
                       onClick={handleClickOpen}
                     >
@@ -150,14 +192,20 @@ export default function HomeGrid(props) {
 
                   </Box>
                 </Grid>
+                {/* button */}
+
               </Grid>
+
+              {/* 上面部分 */}
+
+
             </Box>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6}>
             {" "}
             {/* Right Landing Grid Cell*/}
-            <Box className={classes.landingImage}>
+            <Box className={classes.landingImage} style={{ position: 'relative', top: "-100px", left: '270px', width: 250 }}>
               <FittedImage
                 fit="contain"
                 onLoad={(...args) => console.log(...args)}
@@ -286,7 +334,7 @@ export default function HomeGrid(props) {
             <Box height={50}></Box>
           </Grid>
 
-          <Grid item xs={12} sm={12}>
+          {/* <Grid item xs={12} sm={12}>
             <Grid container spacing={2} justify="center" direction="column">
               <Grid item xs={10}>
                 <Typography variant="h3">About</Typography>
@@ -322,7 +370,7 @@ export default function HomeGrid(props) {
                 </Grid>
               </Grid>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           <Grid item xs={12} sm={12}>
             <Box height={75}></Box>

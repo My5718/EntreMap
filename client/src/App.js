@@ -5,6 +5,7 @@ import { Box, CircularProgress } from "@material-ui/core";
 import Login from "./pages/Login.js";
 import Questions from "./pages/Questions";
 import Results from "./pages/Results";
+import ResultDetails from "./pages/ResultDetails.js";
 import SurveyLanding from "./pages/SurveyLanding";
 import SurveyComplete from "./pages/SurveyComplete";
 import { isLoggedIn } from "./utils/isLoggedIn";
@@ -80,6 +81,7 @@ function App() {
           {/* need to convert to private route on production */}
           <Route path="/questions" component={Questions} />
           <Route path="/results" component={Results} />
+          <Route path="/resultdetails" component={ResultDetails} />
           <Route path="/surveyComplete" component={SurveyComplete} />
           <PrivateRoute path="/profile" component={Profile} />
           <Route path="/surveylanding" component={SurveyLanding} />

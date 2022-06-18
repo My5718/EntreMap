@@ -27,6 +27,22 @@ router.get("/", function (req, res) {
   }
 });
 
+router.get("/all", function (req, res) {
+  if (req.user) {
+    
+    return db
+      .from("SurveyResults")
+      .select("*")
+      .where({  })
+      .then((results) => {
+        res.send(results);
+      });
+  } else {
+    res.status(401).send("User Unauthorised.");
+  }
+});
+
+
 router.post("/", function (req, res) {
   //TODO: Client Authentication
 
